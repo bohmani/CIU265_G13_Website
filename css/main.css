@@ -18,6 +18,21 @@ body {
 
 }
 
+h9 {
+    color: #FFF;
+    font-size: 70px;
+    float: left;
+    translate: -50% -200%;
+
+}
+
+h10 {
+    color: #935e3a;
+    font-size: 100px;
+    float: left;
+    translate: -50% -200%;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -144,7 +159,7 @@ a {
 
     /* Add a black background color to the top navigation */
     .topnav {
-        background-color: #333;
+        background-color: #000000;
         overflow: hidden;
     }
     
