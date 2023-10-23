@@ -1,0 +1,65 @@
+.how-to {
+    background-image: url(img/background-cave.png); 
+    background-size: 1300px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+  .column-3-left {
+    float: left;
+    width: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    align-items: center;
+  }
+
+  h14 {
+    float: right;
+    height: 100px;
+    width: 100px;
+    font-size: 70px;
+    color: #935e3a;
+    margin: 0;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+    h17 {
+        font-size: 1.8em;
+        font-weight: 600;
+        color: #935e3a;
+    }
+
+
+
+  .column-3-right {
+    float: left;
+    width: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+    text-align: left;
+  }
+
+  .column-4-right {
+    float: right;
+    width: auto;
+    height: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0%;
+    text-align: center;
+    align-items: center;
+}
+
+.column-4-left {
+    float: right;
+    width: auto;
+    height: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    text-align: left;
+    align-items: right;
+}

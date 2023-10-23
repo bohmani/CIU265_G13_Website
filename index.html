@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <!--URL title and logo-->
     <head>
@@ -10,144 +11,396 @@
         <link href="css/main.css" rel="stylesheet" />
     </head>
 
+<!--Scroll-up Button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <!--Header Menu-->
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
         <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
         <a href="#about">About</a>
+        <a href="#how-to">How-to</a>
+        <a href="#prototype">Prototype</a>
+        <a class="active" href="#home">Home</a>
         <img class="logo-img" src="img/logo.png" href="#home">
+        <a href="#home" style="float: left"> Sleeping Bear </a>
     </div>
 
+<!--Landing Page-->        
     <div class="container">
-        <img src="img/cave.jpeg" class="landing-page-img">
-        <div class="landing-page-header">TEST</div>
-
+        
+        <img src="img/cave_dimmed_2.png" class="landing-page-img">
+        <div class="landing-page-header">
+            <h9>
+                <span>Do</span>
+                <span>Not</span>
+                <span>Wake</span>
+                <span>Up</span>
+                <br>
+                <span style="font-size: 150%; color: #935e3a; float: left; translate: 0% -20%">The Bear</span>
+            </h9>
+        </div>
     </div>
 
-<!--Logo and Title    
+<!--Transition 1-->
+    <div class="transition-1">
+    </div>
+
+<!--How to-->    
+<div style="background-image: url(img/background-cave.png); 
+            background-size: 1300px; background-position: center; background-repeat: no-repeat;" id="how-to">
     <header>
-        <div>
-            <img class="logo-img" src="img/logo.png">
-            <h1>Sleeping Bear</h1>
-            <h3>
-                The new and <br>
-                improved virtual pet
-            </h3>
-        </div>
+    <h12>How to not wake up</h12><h13>The Bear</h13>
     </header>
--->
-<!--Columns-->    
-      <div class="row">
-        <div class="column">
-          <h2>Column</h2>
-          <p>Här tänker jag att vi skriver något najs om bilden breve Här tänker jag att vi skriver något najs om bilden breve
-            Här tänker jag att vi skriver något najs om bilden breve Här tänker jag att vi skriver något najs om bilden breve
-          </p>
+    <!--1--> 
+    <div class="row">
+        
+        <div class="column-3-left">
+            <script type="text/javascript" src="Scroll-Reveal.js"></script>
+            <h14>1</h14>       
+        </div>
+
+        <div class="column-3-right" style="padding-top: 1%;">
+            <h17>Two players balance a ball<br> on a board using a pulley system</h17>
         </div>
         
-        <div class="column">
-                <img class="column_img" src="img/Game.png" ><img>       
+    </div>
+
+    <!--2--> 
+    <div class="row" style="margin-top: 0%;">
+        
+        <div class="column-4-right" style="padding-top: 1%;">
+            <script type="text/javascript" src="Scroll-Reveal.js"></script>
+            <h14>2</h14>       
         </div>
+
+        <div class="column-4-left">
+            <h17>
+                One player enters a separate<br>
+                room where they must silently convey<br>
+                the correct hole to the other players
+            </h17>
+        </div>
+
+    </div>
+
+    <!--3--> 
+    <div class="row" style="margin-top: 2%;">
+    
+        <div class="column-3-left" style="padding-top: 0%;">
+            <script type="text/javascript" src="Scroll-Reveal.js"></script>
+            <h14>3</h14>       
+        </div>
+
+        <div class="column-3-right" style="padding-top: -2%;">
+            <h17>The two players must guide a ball into<br>
+                the correct hole. Putting it in the wrong<br>
+                creates noise and risks waking up a bear
+            </h17>
+        </div>
+
+    </div>
+
+<!--4--> 
+    <div class="row" style="margin-top: 1%;">
+        
+        <div class="column-4-right">
+            <script type="text/javascript" src="Scroll-Reveal.js"></script>
+            <h14>4</h14>       
+        </div>
+        
+        <div class="column-4-left" style="padding-top: 1%;">
+            <h17>
+                Once successful, a new hole is shown, and<br>
+                the process repeats until all holes has been hit
+            </h17>
+        </div>
+        
+    </div>
+
+</div>
+
+<!--Transition 3-->
+<div class="transition-3">
+</div>
+
+<!--Design Goal-->
+    <div class="design-goal">
+             
+            <div class="column-1">
+                <img class="design-goal-img" src="img/bear.png">
+            </div>
+
+            <div class="column-2">
+                <h1>
+                    Design goal
+                </h1>
+                <h2>
+                    We want to explore methods of communication other than verbal communication. 
+                    By designing the puzzle in a way that requires bodily movement as a medium 
+                    for communication and careful interpersonal physical synergy to complete the 
+                    puzzle, we hope to explore the topic of teamwork in a novel way.
+                </h2>
+            </div>
+
+    </div>
+
+<!--Transition 4-->
+<div class="transition-4">
+</div>
+
+<!--The Puzzle-->    
+    <div class="row" id="about">
+        
+        <div class="column-1-right">
+            <script type="text/javascript" src="Scroll-Reveal.js"></script>
+            <img class="slide-left" class="column_img" src="img/Game.png" ><img>       
+        </div>
+
+        <div class="column-1-left">
+            <h2>The Puzzle</h2>
+            <p style="font-size: 150%;">
+              The puzzle will be a sort of carnival game where two players are balancing a board with 
+              two ropes attached to a pulley system. On the wall behind the board, there are several 
+              holes with animals next to them. The goal is to balance a rock-looking 
+              ball to the correct hole through cooperation.
+            </p>
+        </div>
+
+    </div>  
+
+
+<!--The Puzzle 2-->    
+<div class="row" style="height:700px;" >
+    <div class="column-2-right">
+      <h2>The Room</h2>
+      <p style="font-size: 150%;">
+        Another player must traverse a tunnel into a room that will display one of the animals on the screen. The two rooms 
+        are connected by a window so the player that sees the character must charade to the others 
+        to convey which hole is the correct one. After the players have delivered the ball to the 
+        correct hole a new character will be displayed and the process must be repeated. This will 
+        either continue until they have completed a set amount or the goal is to complete as many 
+        rounds as possible within a set time limit.
+      </p>
+    </div>
+    
+    <div class="column-2-left">
+       
+        <img class="slide-right" class="column_img" src="img/Game-2.png" ><img>       
+    </div>
+</div>
+
+
+<!-- Slideshow container -->
+<header class="ss-header" id="prototype">The Prototype</header>
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <script type="text/javascript" src="slide-show.js"></script>
+      <div class="numbertext">1 / 14</div>
+      <img src="img/prototypbilder/1.jpeg" class="ss-img">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 14</div>
+      <img src="img/prototypbilder/2.jpeg" class="ss-img">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 14</div>
+      <img src="img/prototypbilder/3.jpeg" class="ss-img">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 14</div>
+        <img src="img/prototypbilder/4.jpeg" class="ss-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 14</div>
+        <img src="img/prototypbilder/5.jpeg" class="ss-img">
       </div>
 
-    <body>
-        <div class="container" id="about">
-            <!--The contents of the website, both the body and the footer-->
-            <header>
-                <h1>Do not wake up the bear</h1>
-            </header>
-            <main>
-			<p> [Add some information about your project here. You can make this more attractive by changing the css
-			     and adding some images if you like.]</p>
-			<p> You have found yourself in a cave next to a sleeping bear. Your goal is to escape the cave without 
-                waking up or disturbing the bear too much. In order to escape you will need to perform a task or 
-                puzzle while staying as silent as possible. The task or puzzle is designed to require collaboration 
-                with the twist that the communication needs to be done silently. The sounds you emit are visualised 
-                in the cave, and if you make too much noise, the bear will wake up and you will lose the game. 
-                If you complete the tasks without waking up the bear, your score is decided upon how much cumulative 
-                noise you make.	</p>			
-          
-            </main>
-            <footer>
-			<!-- Remember to change these for your own photos and contact details/ linked in pages -->
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 14</div>
+        <img src="img/prototypbilder/6.jpeg" class="ss-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 14</div>
+        <img src="img/prototypbilder/7.jpeg" class="ss-img">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 14</div>
+        <img src="img/prototypbilder/8.jpeg" class="ss-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 14</div>
+        <img src="img/prototypbilder/9.jpeg" class="ss-img">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 14</div>
+        <img src="img/prototypbilder/10.jpeg" class="ss-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 14</div>
+        <img src="img/prototypbilder/11.jpeg" class="ss-img">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 14</div>
+        <img src="img/prototypbilder/12.jpeg" class="ss-img">
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">13 / 14</div>
+        <img src="img/prototypbilder/13.jpeg" class="ss-img">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">14 / 14</div>
+        <img src="img/prototypbilder/14.jpg" class="ss-img">
+      </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+  </div>
+
+
+<!--Transition 2-->
+<div class="transition-2">
+</div>
+
+
+<!-- Team Members -->
+        <div style="background-color:black">  
+            <footer class="fade-in">
+                <script type="text/javascript" src="Scroll-Reveal.js"></script>
                 <div class="line" id="team"></div>
-                <h2>Team</h2>
+                    <h11>Team</h11>
                 <section class="images">
                     <div class="col">
-                        <img src="img/Olle_Anthin.png" alt="" class="placeholder"/>
+                        <img src="img/Olle_Anthin.png" style="filter: brightness(300%) grayscale(100%);"  class="placeholder"/>
                         <div class="name">
-                            <h4>Olle Anthin</h4>
-                            <a href="https://www.linkedin.com/in/josef-widestr%C3%B6m-20147aa6/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                            <h4>Olle<br>Anthin</h4>
+                            <a href="https://www.linkedin.com/in/olle-anthin-b4812993/">
+                                <img class="linkedin-img" src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
-                            <a href="mailto: josef.widestrom@chalmers.se">
-                                <img src="img/email.png" alt="Email icon">
+                            <a href="mailto: odaspost@gmail.com">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <img src="img/Emil_Bohman.png" alt="" class="placeholder"/>
                         <div class="name">
-                            <h4>Emil Bohman</h4>
+                            <h4>Emil<br>Bohman</h4>
                             <a href="https://www.linkedin.com/in/bohman-emil/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                                <img class="linkedin-img" img src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
                             <a href="mailto: bohmanemil@gmail.com">
-                                <img src="img/email.png" alt="Email icon">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
 					<div class="col">
                         <img src="img/Pontus_Boren.png" alt="" class="placeholder"/>
                         <div class="name">
-                            <h4>Pontus Borén</h4>
-                            <a href="https://www.linkedin.com/in/bohman-emil/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                            <h4>Pontus<br>Borén</h4>
+                            <a href="https://www.linkedin.com/in/pontus-boren-00248975/">
+                                <img class="linkedin-img" src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
-                            <a href="mailto: .becky@chalmers.se">
-                                <img src="img/email.png" alt="Email icon">
+                            <a href="mailto: pontusboren@gmail.com">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <img src="img/Felix_Holmesten.png" alt="" class="placeholder"/>
                         <div class="name">
-                            <h4>Felix Holmesten</h4>
-                            <a href="https://www.linkedin.com/in/bohman-emil/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                            <h4>Felix<br>Holmesten</h4>
+                            <a>
+                                <img class="linkedin-img" src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
-                            <a href="mailto: .haelias@chalmers.se">
-                                <img src="img/email.png" alt="Email icon">
+                            <a href="mailto: Holmesten99@hotmail.com">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <img src="img/Hannes_Nordblom.png" alt="" class="placeholder"/>
                         <div class="name">
-                            <h4>Hannes Nordblom</h4>
-							<a href= "https://www.linkedin.com/in/jasmina-maric-1b260919/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                            <h4>Hannes<br>Nordblom</h4>
+							<a href= "https://www.linkedin.com/in/hannes-nordblom-528533187/">
+                                <img class="linkedin-img" src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
-                            <a href="mailto: jasmina@chalmers.se">
-                                <img src="img/email.png" alt="Email icon">
+                            <a href="mailto: hannes.nordblom@gmail.com">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
 					<div class="col">
                         <img src="img/Hugo_Warnholm.png" alt="" class="placeholder"/>
                         <div class="name">
-                            <h4>Hugo Wärnberg</h4>
-                            <a href="https://www.linkedin.com/in/natasha-m-033ba4b9/">
-                                <img src="img/linkedin.png" alt="Linkedin icon" >
+                            <h4>Hugo<br>Wärnberg</h4>
+                            <a href="https://www.linkedin.com/in/hugo-w%C3%A4rnberg-a9a7b4265/">
+                                <img class="linkedin-img" src="img/linkedin.png" alt="Linkedin icon" >
                             </a>
-                            <a href="mailto: natashab@chalmers.se">
-                                <img src="img/email.png" alt="Email icon">
+                            <a href="mailto: hugo.warnberg97@gmail.com">
+                                <img class="email-img" src="img/email.png" alt="Email icon">
                             </a>
                         </div>
                     </div>
                 </section>
             </footer>
+          </div> 
         </div>
     </body>
+
 </html>
