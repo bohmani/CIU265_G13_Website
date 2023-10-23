@@ -8,7 +8,11 @@
   align-self: center;
   margin-bottom: 3%;
 }
-
+@media screen and (max-width: 900px) {
+  .ss-header {
+  margin-top: 5%;
+  }
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 400px;
@@ -16,6 +20,13 @@
   margin: auto;
   margin-top: 0%;
 }
+@media screen and (max-width: 900px) {
+  .slideshow-container {
+  width: 350px;
+  float: none;
+  }
+}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -25,6 +36,11 @@
 .ss-img {
   width:400px; 
   border-radius: 25px;
+}
+@media screen and (max-width: 900px) {
+  .ss-img {
+  width: 350px;
+  }
 }
 
 /* Next & previous buttons */

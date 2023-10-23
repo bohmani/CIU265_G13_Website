@@ -53,6 +53,18 @@ body {
     padding: 10px 12px;
     }
 
+    @media screen and (max-width: 900px) {
+        .topnav a {
+            padding: 5% 2%;
+            font-size: 10px;
+        }
+
+        .logo-img {
+            height: 12px;
+            padding: 5% 2%;
+        }
+    }
+
 /* Scroll up Button */
     #myBtn {
         display: none; /* Hidden by default */
@@ -102,9 +114,20 @@ h10 {
     position: absolute;
     top: 30%;
     left: 10%;
-    transform: translate(0%, 0%);
     font-size: 8em;
 }
+
+@media screen and (max-width: 900px) {
+    h9 {
+    font-size: 20px;
+    
+    }
+    .landing-page-header {
+        top: 20%;
+        left: 10%;
+    }
+}
+
 header {
     margin: 0 auto;
     width: 100%;
@@ -185,13 +208,28 @@ header h3 {
         padding-right: 5%;
         padding-top:8%;
     }
-
+    @media screen and (max-width: 900px) {
+        .column-1-left {
+        width: 80%;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        }
+    }
     .column-1-right {
         float: right;
         width: 50%;
         padding-left: 5%;
         padding-right: 5%;
         padding-top:8%;
+    }
+    @media screen and (max-width: 900px) {
+        .column-1-right {
+        width: 80%;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        }
     }
 
     .column-2-left {
@@ -201,13 +239,29 @@ header h3 {
         padding-right: 5%;
         padding-top:8%;
     }
-
+    @media screen and (max-width: 900px) {
+        .column-2-left {
+        width: 80%;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        padding-top: 0%;
+        }
+    }
     .column-2-right {
         float: right;
         width: 30%;
         padding-left: 5%;
         padding-right: 5%;
         padding-top:8%;
+    }
+    @media screen and (max-width: 900px) {
+        .column-2-right {
+        width: 80%;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        }
     }
 
     h2 {
@@ -255,8 +309,11 @@ header h3 {
   
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
     @media screen and (max-width: 900px) {
-        .column {
+        .row {
         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
         }
     }
 
@@ -351,6 +408,16 @@ a {
     h4 {
         color: #ffffff;
     }
+
+    @media screen and (max-width: 900px) {
+        h12 {
+        font-size: 1.8em;
+        }
+        h12 {
+            font-size: 2.2em;
+            }
+    }
+
     .placeholder {
         width: 150px; height: 150px;
         border-radius: 30%;
@@ -375,16 +442,11 @@ a {
         display: flex;
         text-align: center;
     }
-/*
+
 @media screen and (max-width: 800px) {
 
     .modes {
         height: 250px;
-    }
-
-
-    .placeholder {
-        width: 40%;
     }
 
     h2 {
@@ -411,10 +473,15 @@ a {
     .col img {
         margin-right: 10%;
     }
-*/
+
     .name {
         text-align: center;
     }
+}
+
+.name {
+    text-align: center;
+}
 /*
     html, body {
         overflow-x: hidden;
