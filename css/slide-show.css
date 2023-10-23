@@ -1,7 +1,7 @@
 /** {box-sizing:border-box}*/
 
 .ss-header {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #935e3a;
   display: flexbox;
@@ -83,6 +83,7 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  margin-bottom: 5%;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

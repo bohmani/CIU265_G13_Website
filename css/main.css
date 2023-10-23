@@ -43,6 +43,7 @@ body {
     /* Add a color to the active/current link */
     .topnav a.active {
         color:#935e3a;
+        background-color: #0000;
     }
     
     .logo-img {
