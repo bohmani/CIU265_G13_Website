@@ -1,28 +1,84 @@
+@import "Landing-Text-Animation.css";
+@import "how-to.css";
+@import "design-goal.css";
+@import "slide-show.css";
+
 html {
     scroll-behavior: smooth;
   }
 
 body {
-    background-color: #4b4b4b;
+    background-color: #252525;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    color: #935e3a;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
-.logo-img {
-    height:30px; 
+/* Header Menu */
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-image: linear-gradient(rgb(50, 50, 50), rgb(0, 0, 0));
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        color:#935e3a;
+    }
+    
+    .logo-img {
+    height: 35px;; 
     float: left;
     text-align: center;
     padding: 10px 12px;
+    }
 
-}
-
+/* Scroll up Button */
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #935e3a; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 70px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        transition: 1000ms ease-in-out;
+      }
+      
+      #myBtn:hover {
+        border: 2px solid #ffffff; /* Remove borders */
+      }
+      
 h9 {
     color: #FFF;
     font-size: 70px;
     float: left;
-    translate: -50% -200%;
+    translate: 0;
 
 }
 
@@ -30,7 +86,7 @@ h10 {
     color: #935e3a;
     font-size: 100px;
     float: left;
-    translate: -50% -200%;
+    translate: 0 -20%;
 }
 
 .container {
@@ -43,8 +99,8 @@ h10 {
 
 .landing-page-header {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 30%;
+    left: 10%;
     transform: translate(0%, 0%);
     font-size: 8em;
 }
@@ -95,36 +151,114 @@ header h3 {
     display: flex;
 }
 
-/* Main */
-
-/* Create three equal columns that float next to each other */
-.column {
-    float: left;
-    width: 40%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-.column_img {
-    float: left;
-    width: 100%; 
-    border-radius: 30px;
-    margin-top: 30px;
-}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 100%;
+/* Transitions */
+    .transition-1 {
+        background-image: linear-gradient(rgb(0, 0, 0), #252525);
+        height: 100px;
     }
-  }
+
+    .transition-2 {
+        background-image: linear-gradient( #252525, rgb(0, 0, 0));
+        height: 80px;
+    }
+
+    .transition-3 {
+        background-image: linear-gradient(#252525, #000000);
+        height: 20px;
+        margin-top: 50px;
+    }
+
+    .transition-4 {
+        background-image: linear-gradient( #000000, #252525);
+        height: 30px;
+    }
+
+
+/* About */
+
+/* Create two columns that float next to each other */
+    .column-1-left {
+        float: right;
+        width: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top:8%;
+    }
+
+    .column-1-right {
+        float: right;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top:8%;
+    }
+
+    .column-2-left {
+        float: right;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top:8%;
+    }
+
+    .column-2-right {
+        float: right;
+        width: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top:8%;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #935e3a;
+    }
+
+    .flip {
+        float: left;
+        width: 100%; 
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .flip-2 {
+        float: left;
+        width: 100%; 
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .slide-right {
+        float: left;
+        width: 100%; 
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .slide-left {
+        float: left;
+        width: 100%; 
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+    
+
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+  
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+    @media screen and (max-width: 900px) {
+        .column {
+        width: 100%;
+        }
+    }
+
 
 main {
     text-align: center;
@@ -139,7 +273,6 @@ main section {
 }
 
 
-
 .images {
     display: flex;
     flex-direction: row;
@@ -147,107 +280,100 @@ main section {
     max-width: 80%;
 }
 
-h2 {
-    font-size: 2em;
-}
+
 
 a {
     text-decoration: none;
 }
 
-/* Header Menu */
 
-    /* Add a black background color to the top navigation */
-    .topnav {
-        background-color: #000000;
-        overflow: hidden;
-    }
-    
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        float: right;
-        color: #f2f2f2;
+/* Team */
+    /* Displaying the photos */
+    #imgViewer, #control {
+        width: 100%;
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
     }
-    
-    /* Change the color of links on hover */
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
+    #imgViewer img {
+        border: 6px ridge #F90;
+        width: 380px;
+        max-width: 100%;
     }
-    
-    /* Add a color to the active/current link */
-    .topnav a.active {
-        background-color: #4b4b4b;
-        color: white;
+    #imgViewer figcaption {
+        font-style: italic;
+    }
+    #control button {
+        background-color: #FFF;
+        margin: 0 20px;
+        font-size: 1em;
+        border: 1px solid rgb(139, 139, 139);
     }
 
-/* Displaying the photos */
-#imgViewer, #control {
-    width: 100%;
-    text-align: center;
-}
-#imgViewer img {
-    border: 6px ridge #F90;
-    width: 380px;
-    max-width: 100%;
-}
-#imgViewer figcaption {
-    font-style: italic;
-}
-#control button {
-    background-color: #FFF;
-    margin: 0 20px;
-    font-size: 1em;
-    border: 1px solid rgb(139, 139, 139);
-}
+    .linkedin-img {
+        height:30px;
+        margin-right: 5px;
+    }
 
-/* Footer */
+    .email-img {
+        height:30px;
+        margin-right: 5px;
+    }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0% 0% 2% 0%;
-    background-color:#8A6859;
-    margin: 5% 10% 3% 10%;
-    border-radius: 50px;
-    border: 4px solid #432A19;
-}
+    /* Footer */
 
-footer h2 {
-    margin: 2% 1%;
-    border-top: #8A6859 solid 1px;
-    width: 50%;
-    font-size: 3em;
-    color: #432A19;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0% 0% 2% 0%;
+        background-color:#000000;
+        margin: 0;
+        border-radius: 0px;
+    }
 
-.placeholder {
-    width: 150px; height: 150px;
-    border-radius: 30%;
-    border: 4px solid #c98135;
-    margin-left: 10px; margin-right: 10px;
-}
+    h11 {
+        margin-bottom: 2%;
+        font-size: 3em;
+        color: #ffffff;
+        align-items: center;
+    }
 
-/*.placeholder:hover {
-    width: 180px;
-    height: 180px;
-}*/
+    h12 {
+        font-size: 3em;
+        color: #ffffff;
+    }
 
-footer h4 {
-    margin: 0 auto;
-    margin-left: 50px; margin-right: 50px; margin-bottom: 10px;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #c98135;
-    padding-bottom: 2%;
-    justify-content: center;
-    display: flex;
-}
+    h13 {
+        font-size: 4em;
+        color: #935e3a;
+    }
+
+    h4 {
+        color: #ffffff;
+    }
+    .placeholder {
+        width: 150px; height: 150px;
+        border-radius: 30%;
+        border: 4px solid #ffffff;
+        margin-left: 20px; margin-right: 20px;
+        filter: grayscale(100%)
+    }
+
+    /*.placeholder:hover {
+        width: 180px;
+        height: 180px;
+    }*/
+
+    footer h4 {
+        margin: 0 auto;
+        margin-left: 0px; margin-right: 0px; margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #ffffff;
+        padding-bottom: 2%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
 /*
 @media screen and (max-width: 800px) {
 
@@ -284,11 +410,11 @@ footer h4 {
     .col img {
         margin-right: 10%;
     }
-
+*/
     .name {
-        text-align: left;
+        text-align: center;
     }
-
+/*
     html, body {
         overflow-x: hidden;
     }
@@ -302,3 +428,5 @@ footer h4 {
     }
     }
 	*/
+
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");

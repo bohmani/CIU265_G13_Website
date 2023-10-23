@@ -1,0 +1,47 @@
+.design-goal {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    min-height: 100%;
+    background-color: #000000;
+}
+
+.column-1 {
+    float: left;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 3%;
+    align-self: center;
+}
+
+.column-2 {
+    float: left;
+    width: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+.design-goal h1 {
+    float: left;
+    padding-top: 0%;
+    padding-left: 5%;
+    font-size: 40px;
+    margin-bottom: 0;
+    color: #935e3a;
+}
+
+.design-goal h2 {
+    float: left;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 25%;
+    font-size: 20px;
+    color: white;
+    width: auto;
+}
+
+.design-goal-img {
+    height: 150px;
+    float: left;
+}
