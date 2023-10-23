@@ -7,6 +7,8 @@
     padding-bottom: 1%;
 }
 
+
+
 .column-1 {
     float: left;
     width: auto;
@@ -22,6 +24,15 @@
     padding-right: 3%;
     text-align: left;
 }
+@media screen and (max-width: 900px) {
+    
+    .column-2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 5%;
+    }
+  }
 
 .design-goal h1 {
     float: left;
@@ -41,8 +52,24 @@
     color: white;
     width: auto;
 }
-
+@media screen and (max-width: 900px) {
+    
+    .design-goal h2 {
+      padding: 5%;
+    }
+    .design-goal h1 {
+        padding: 5%;
+        float: none;
+        margin:0;
+      }
+  }
 .design-goal-img {
     height: 150px;
     float: left;
+}
+
+@media screen and (max-width: 900px) {
+    .design-goal {
+    flex-direction: column;
+    }
 }
